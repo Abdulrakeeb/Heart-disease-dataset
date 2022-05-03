@@ -1,21 +1,15 @@
 **********************************************************************
-*                                                                    *
-*     Copyright(c) 2022 by Dr.Abdulrakeeb M. Al-Ssulami              *
-*                                                                    *
-**********************************************************************
-
-**********************************************************************
 **********************************************************************
 *                                                                    *
-*                     Heart disease datasets                         *
+*   Heart disease datasets by Dr.Abdulrakeeb M. Al-Ssulami, 2022     *
 *                                                                    *
 **********************************************************************
 **********************************************************************
 
 - 6 heart datasets were produced by instance duplication using k-nearest neighbor (k-NN), random forests (RF), decision tree (DT), support vector machine (SVM), Gaussian Naive Bayes (GNB), and Adaboost (ADB) classifiers. 
-- The datasets are presented in the paper: Abdulrakeeb M. Al-Ssulami, Randh S. Alsorori, and Aqil M. Azmi. 
-  Accuracy improvement of heart disease prediction based on instance duplication, 2022.
-- We produced these datasets from IEEE-DataPort heart dataset by Manu in 2020 which can be found at https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
+- The datasets are presented in the paper: 
+  Al-Ssulami AM, Alsorori RS, Azmi AM, and Aboalsamh H, 2022. Improving the accuracy of heart disease prediction through selective instance duplication, submitted to Expert Systems With Applications.
+- We produced these datasets from UCI-1190-11 (IEEE DataPort) heart dataset by Manu in 2020 which can be found at https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 - All datasets contain 11 features and the target (0=no heart disease, 1= heart disease)
 - The features are
    ---------------------------------------------------------------------------------------------------------------------
@@ -37,11 +31,25 @@
    -------------------------------------------------------------------------------------------------------------------------------
 	Dataset name		# of instances 	# of duplicate instances	# of HD		# of NHD	duplication rounds
    -------------------------------------------------------------------------------------------------------------------------------
-	IEEE-1099-11-KNN.csv 	1099		181				599		500		2
-	IEEE-1077-11-RF.csv	1077		159				579		498		3
-	IEEE-1174-11-DT.csv	1174		256				649		525		2
-	IEEE-1114-11-SVM.csv	1114		196				607		507		3
-	IEEE-1054-11-GNB.csv	1054		136				580		474		1
-	IEEE-1060-11-ADB.csv	1060		142				576		484		2
+	UCI-KNN-1099-11 	1099		181				599		500		2
+	UCI-RF-1077-11		1077		159				579		498		3
+	UCI-DT-1174-11		1174		256				649		525		2
+	UCI-SVM-1114-11		1114		196				607		507		3
+	UCI-GNB1054-11		1054		136				580		474		1
+	UCI-ADB-1060-11		1060		142				576		484		2
    -------------------------------------------------------------------------------------------------------------------------------
--Accuracy results of k-NN, RF, DT, SVM, GNB, and ADB are 100%, 98%, 97.7%, 93.5%, 74.6%, and 78.7%, respectively.
+-Leave-one-out cross-validation mean accuracy results of k-NN, RF, DT, SVM, GNB, and ADB are 100%, 98%, 97.7%, 93.5%, 74.6%, and 78.7%, respectively.
+
+- Three heart disease datasets Cleveland-303-10, Hungarian-98-10, and VA-93-10 are curated from UCI repository.
+- These three datasets have 10 features (all features in the table above except feature number 6)
+- Four classifier-based enhanced datasets are generated from Cleveland-303-10.
+- Dataset names and information
+   -------------------------------------------------------------------------------------------------------------------------------
+	Dataset name		# of instances 	# of duplicate instances	# of HD		# of NHD	duplication rounds
+   -------------------------------------------------------------------------------------------------------------------------------
+	Cleveland-KNN-387-10 	387		84				184		203		2
+	Cleveland-RF-400-10	400		97				192		208		4
+	Cleveland-DT-474-10	474		171				218		256		7
+	Cleveland-SVM-390-10	390		87				181		209		2
+   -------------------------------------------------------------------------------------------------------------------------------
+-Leave-one-out cross-validation mean accuracy results of k-NN, RF, DT, and SVM are 100%, 99.5%, 100%, and 94.4%, respectively.
