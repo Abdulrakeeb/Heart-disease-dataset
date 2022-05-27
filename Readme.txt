@@ -7,8 +7,6 @@
 **********************************************************************
 
 - 6 heart datasets were produced by instance duplication using k-nearest neighbor (k-NN), random forests (RF), decision tree (DT), support vector machine (SVM), Gaussian Naive Bayes (GNB), and Adaboost (ADB) classifiers. 
-- The datasets are presented in the paper: 
-  Al-Ssulami AM, Alsorori RS, Azmi AM, and Aboalsamh H, 2022. Improving the accuracy of heart disease prediction through selective instance duplication.
 - We produced these datasets from UCI-1190-11 (IEEE DataPort) heart dataset by Manu in 2020 which can be found at https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 - All datasets contain 11 features and the target (0=no heart disease, 1= heart disease)
 - The features are
